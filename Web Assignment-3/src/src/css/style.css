@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+
+.header {   /* New Animation added to Gallery Section. Different from Assignment-1. */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header {
+    background: #444;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .fish-name a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #77aaff;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    padding: 150px 20px;
+    color: #fff;
+    background: url('img/Background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section h1,
+.hero-section p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-of-type(even) {
+    background: #f9f9f9;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p,
+section ul {
+    padding: 0 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+section ul {
+    list-style: disc;
+    margin-left: 40px;
+}
+
+/* Gallery Section */
+.about-section p, /* New Animation added to Gallery Section. Different from Assignment-1. */
+.gallery-section .gallery-item {
+    transition: transform 0.3s ease;
+}
+
+.about-section p:hover, /* New Animation added to Gallery Section. Different from Assignment-1. */
+.gallery-section .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+
+.gallery-section .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-section .gallery-item {
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.gallery-section .gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #444;
+    color: #fff;
+    margin-top: 20px;
+}

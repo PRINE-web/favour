@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fish World</title>
+    <link rel="stylesheet" href="css/contact.css"> <!-- Linking the stylesheet for the contact page -->
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container">
+            <div class="fish-name">
+                <a href="index.html">Fish World</a> <!-- Logo linking back to the homepage -->
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about-pike">About Pike Fish</a></li>
+                    <li><a href="index.html#about-salmon">About Salmon Fish</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="honesty.html">Honesty Declaration</a></li>
+                    <li><a href="contact.html">Contact Us</a></li> <!-- Link to the contact page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Contact Form Start -->
+     <form action="https://formspree.io/f/xrbzqrwk" method="POST">
+     <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date" required placeholder="dd/mm/yy">
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </form>
+    </section> 
+    <!-- Contact Form End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <p>&copy; 2022 Fish World Org.</p>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="js/contact.js"></script> <!-- Linking the JavaScript file for form validation -->
+</body>
+</html>

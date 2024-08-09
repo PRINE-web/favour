@@ -14,6 +14,11 @@ body {
 }
 
 /* Header Styles */
+
+.header {   /* New Animation added to Gallery Section. Different from Assignment-1. */
+    animation: fadeIn 2s ease-in-out;
+}
+
 .header {
     background: #444;
     color: #fff;
@@ -127,6 +132,17 @@ section ul {
 }
 
 /* Gallery Section */
+.about-section p, /* New Animation added to Gallery Section. Different from Assignment-1. */
+.gallery-section .gallery-item {
+    transition: transform 0.3s ease;
+}
+
+.about-section p:hover, /* New Animation added to Gallery Section. Different from Assignment-1. */
+.gallery-section .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+
 .gallery-section .gallery-container {
     display: flex;
     flex-wrap: wrap;
